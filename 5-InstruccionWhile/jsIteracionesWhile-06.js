@@ -1,13 +1,17 @@
+//Brandon Flores-Div X
 function mostrar()
 {
-	var contador;
-	var acumulador;
-	var numeroIngresado;
+	let contador = 0;
+	let acumulador = 0;
+	let numeroIngresado;
 
-	contador=0;
-	acumulador=0;
+	while (contador < 5)
+	{
+		contador = contador + 1;
+		numeroIngresado = parseFloat(prompt("Ingrese un número"));
+		acumulador = acumulador + numeroIngresado;
+	}
 	
-	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
+	txtIdSuma.value = acumulador;
+	txtIdPromedio.value = acumulador/5;
 }//FIN DE LA FUNCIÓN
